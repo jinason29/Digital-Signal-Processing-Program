@@ -1,17 +1,17 @@
 
-// JungSangE_DSP.h : JungSangE_DSP ÀÀ¿ë ÇÁ·Î±×·¥¿¡ ´ëÇÑ ÁÖ Çì´õ ÆÄÀÏ
+// JungSangE_DSP.h : JungSangE_DSP ì‘ìš© í”„ë¡œê·¸ë¨ì— ëŒ€í•œ ì£¼ í—¤ë” íŒŒì¼
 //
 #pragma once
 
 #ifndef __AFXWIN_H__
-	#error "PCH¿¡ ´ëÇØ ÀÌ ÆÄÀÏÀ» Æ÷ÇÔÇÏ±â Àü¿¡ 'stdafx.h'¸¦ Æ÷ÇÔÇÕ´Ï´Ù."
+	#error "PCHì— ëŒ€í•´ ì´ íŒŒì¼ì„ í¬í•¨í•˜ê¸° ì „ì— 'stdafx.h'ë¥¼ í¬í•¨í•©ë‹ˆë‹¤."
 #endif
 
-#include "resource.h"       // ÁÖ ±âÈ£ÀÔ´Ï´Ù.
+#include "resource.h"       // ì£¼ ê¸°í˜¸ì…ë‹ˆë‹¤.
 
 
 // CJungSangE_DSPApp:
-// ÀÌ Å¬·¡½ºÀÇ ±¸Çö¿¡ ´ëÇØ¼­´Â JungSangE_DSP.cppÀ» ÂüÁ¶ÇÏ½Ê½Ã¿À.
+// ì´ í´ë˜ìŠ¤ì˜ êµ¬í˜„ì— ëŒ€í•´ì„œëŠ” JungSangE_DSP.cppì„ ì°¸ì¡°í•˜ì‹­ì‹œì˜¤.
 //
 
 class CJungSangE_DSPApp : public CWinAppEx
@@ -20,12 +20,12 @@ public:
 	CJungSangE_DSPApp();
 
 
-// ÀçÁ¤ÀÇÀÔ´Ï´Ù.
+// ì¬ì •ì˜ì…ë‹ˆë‹¤.
 public:
 	virtual BOOL InitInstance();
 	virtual int ExitInstance();
 
-// ±¸ÇöÀÔ´Ï´Ù.
+// êµ¬í˜„ì…ë‹ˆë‹¤.
 	BOOL  m_bHiColorIcons;
 
 	virtual void PreLoadState();
