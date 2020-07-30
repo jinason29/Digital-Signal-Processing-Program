@@ -1,119 +1,41 @@
 ================================================================================
-    MFC ¶óÀÌºê·¯¸® : JungSangE_DSP ÇÁ·ÎÁ§Æ® °³¿ä
+    MFC ë¼ì´ë¸ŒëŸ¬ë¦¬ : DSP í”„ë¡œì íŠ¸ ê°œìš”
 ================================================================================
 
-ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¿¡¼­ ÀÌ JungSangE_DSP ÀÀ¿ë ÇÁ·Î±×·¥À» 
-¸¸µé¾ú½À´Ï´Ù. ÀÌ ÀÀ¿ë ÇÁ·Î±×·¥Àº MFCÀÇ ±âº» »ç¿ë¹ýÀ» º¸¿© ÁÙ »Ó¸¸ ¾Æ´Ï¶ó ÀÀ¿ë 
-ÇÁ·Î±×·¥ÀÛ¼ºÀ» À§ÇÑ ±âº» ±¸Á¶¸¦ Á¦°øÇÕ´Ï´Ù.
-
-ÀÌ ÆÄÀÏ¿¡´Â JungSangE_DSP ÀÀ¿ë ÇÁ·Î±×·¥À» ±¸¼ºÇÏ´Â °¢ ÆÄÀÏ¿¡ ´ëÇÑ
-¿ä¾à ¼³¸íÀÌ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.
-
-JungSangE_DSP.vcxproj
-    ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¸¦ »ç¿ëÇÏ¿© »ý¼ºµÈ VC++ ÇÁ·ÎÁ§Æ®ÀÇ ÁÖ ÇÁ·ÎÁ§Æ® ÆÄÀÏÀÔ´Ï´Ù. 
-    ÆÄÀÏÀ» »ý¼ºÇÑ Visual C++ ¹öÀü¿¡ ´ëÇÑ Á¤º¸¿Í ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¸¦ »ç¿ëÇÏ¿© ¼±ÅÃÇÑ 
-    ÇÃ·§Æû, ±¸¼º ¹× ÇÁ·ÎÁ§Æ® ±â´É¿¡ ´ëÇÑ Á¤º¸°¡ µé¾î ÀÖ½À´Ï´Ù.
-
-JungSangE_DSP.vcxproj.filters
-    ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¸¦ »ç¿ëÇÏ¿© »ý¼ºµÈ VC++ ÇÁ·ÎÁ§Æ®ÀÇ ÇÊÅÍ ÆÄÀÏÀÔ´Ï´Ù. 
-    ÀÌ ÆÄÀÏ¿¡´Â ÇÁ·ÎÁ§Æ®ÀÇ ÆÄÀÏ°ú ÇÊÅÍ °£ÀÇ ¿¬°á Á¤º¸°¡ µé¾î ÀÖ½À´Ï´Ù. ÀÌ·¯ÇÑ 
-    ¿¬°áÀº Æ¯Á¤ ³ëµå¿¡¼­ À¯»çÇÑ È®Àå¸íÀ¸·Î ±×·ìÈ­µÈ ÆÄÀÏÀ» Ç¥½ÃÇÏ±â À§ÇØ 
-    IDE¿¡¼­ »ç¿ëµË´Ï´Ù. ¿¹¸¦ µé¾î ".cpp" ÆÄÀÏÀº "¼Ò½º ÆÄÀÏ" ÇÊÅÍ¿Í ¿¬°áµÇ¾î 
-    ÀÖ½À´Ï´Ù.
-
-
-JungSangE_DSP.h
-    ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ±âº» Çì´õ ÆÄÀÏÀÔ´Ï´Ù. ¿©±â¿¡´Â ´Ù¸¥ ÇÁ·ÎÁ§Æ® °ü·Ã
-    Çì´õ(Resource.h Æ÷ÇÔ)°¡ µé¾î ÀÖ°í CJungSangE_DSPApp ÀÀ¿ë ÇÁ·Î±×·¥
-    Å¬·¡½º¸¦ ¼±¾ðÇÕ´Ï´Ù.
-
-JungSangE_DSP.cpp
-    ÀÀ¿ë ÇÁ·Î±×·¥ Å¬·¡½º CJungSangE_DSPAppÀÌ(°¡) µé¾î ÀÖ´Â ±âº» ÀÀ¿ë ÇÁ·Î±×·¥
-    ¼Ò½º ÆÄÀÏÀÔ´Ï´Ù.
-
-JungSangE_DSP.rc
-    ÇÁ·Î±×·¥¿¡¼­ »ç¿ëÇÏ´Â ¸ðµç Microsoft Windows ¸®¼Ò½ºÀÇ ¸ñ·ÏÀÔ´Ï´Ù.
- ¿©±â¿¡´Â RES ÇÏÀ§ µð·ºÅÍ¸®¿¡ ÀúÀåµÈ ¾ÆÀÌÄÜ, ºñÆ®¸Ê ¹× Ä¿¼­°¡
-    Æ÷ÇÔµË´Ï´Ù. ÀÌ ÆÄÀÏÀº Microsoft Visual C++¿¡¼­ Á÷Á¢
-    ÆíÁýÇÒ ¼ö ÀÖ½À´Ï´Ù. ÇÁ·ÎÁ§Æ® ¸®¼Ò½º´Â 1042¿¡ ÀÖ½À´Ï´Ù.
-
-res\JungSangE_DSP.ico
-    ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ¾ÆÀÌÄÜÀ¸·Î »ç¿ëµÇ´Â ¾ÆÀÌÄÜ ÆÄÀÏÀÔ´Ï´Ù. ÀÌ ¾ÆÀÌÄÜÀº
-    ÁÖ ¸®¼Ò½º ÆÄÀÏÀÎ JungSangE_DSP.rc¿¡ ÀÇÇØ Æ÷ÇÔµË´Ï´Ù.
-
-res\JungSangE_DSP.rc2
-    ÀÌ ÆÄÀÏ¿¡´Â Microsoft Visual C++ ÀÌ¿ÜÀÇ ´Ù¸¥ µµ±¸¿¡¼­ ÆíÁýÇÑ ¸®¼Ò½º°¡ 
-    µé¾î ÀÖ½À´Ï´Ù. ¸®¼Ò½º ÆíÁý±â·Î ÆíÁýÇÒ ¼ö ¾ø´Â ¸ðµç ¸®¼Ò½º´Â
-    ÀÌ ÆÄÀÏ¿¡ ³Ö¾î¾ß ÇÕ´Ï´Ù.
+ì‘ìš© í”„ë¡œê·¸ëž¨ ë§ˆë²•ì‚¬ì—ì„œ DSP ì‘ìš© í”„ë¡œê·¸ëž¨ì„ 
+ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤. ì´ ì‘ìš© í”„ë¡œê·¸ëž¨ì€ MFCì˜ ê¸°ë³¸ ì‚¬ìš©ë²•ì„ ë³´ì—¬ ì¤„ ë¿ë§Œ ì•„ë‹ˆë¼ ì‘ìš© 
+í”„ë¡œê·¸ëž¨ìž‘ì„±ì„ ìœ„í•œ ê¸°ë³¸ êµ¬ì¡°ë¥¼ ì œê³µí•©ë‹ˆë‹¤.
 
 /////////////////////////////////////////////////////////////////////////////
 
-ÁÖ ÇÁ·¹ÀÓ Ã¢ÀÇ °æ¿ì:
-    ÇÁ·ÎÁ§Æ®¿¡´Â Ç¥ÁØ MFC ÀÎÅÍÆäÀÌ½º°¡ Æ÷ÇÔµË´Ï´Ù.
+ì£¼ í”„ë ˆìž„ ì°½ì˜ ê²½ìš°:
+    í”„ë¡œì íŠ¸ì—ëŠ” í‘œì¤€ MFC ì¸í„°íŽ˜ì´ìŠ¤ê°€ í¬í•¨ë©ë‹ˆë‹¤.
 
 MainFrm.h, MainFrm.cpp
-    ÀÌ ÆÄÀÏ¿¡´Â ÇÁ·¹ÀÓ Å¬·¡½º CMainFrameÀÌ(°¡) µé¾î ÀÖ½À´Ï´Ù.
-    ÀÌ Å¬·¡½º´ÂCFrameWnd¿¡¼­ ÆÄ»ýµÇ¸ç ¸ðµç SDI ÇÁ·¹ÀÓ ±â´ÉÀ» Á¦¾îÇÕ´Ï´Ù.
+    ì´ íŒŒì¼ì—ëŠ” í”„ë ˆìž„ í´ëž˜ìŠ¤ CMainFrameì´(ê°€) ë“¤ì–´ ìžˆìŠµë‹ˆë‹¤.
+    ì´ í´ëž˜ìŠ¤ëŠ”CFrameWndì—ì„œ íŒŒìƒë˜ë©° ëª¨ë“  SDI í”„ë ˆìž„ ê¸°ëŠ¥ì„ ì œì–´í•©ë‹ˆë‹¤.
 
 /////////////////////////////////////////////////////////////////////////////
 
-ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¿¡¼­ ÇÏ³ªÀÇ ¹®¼­ Çü½Ä°ú ÇÏ³ªÀÇ ºä°¡ ¸¸µé¾îÁý´Ï´Ù.
+ê¸°íƒ€ ê¸°ëŠ¥:
 
-JungSangE_DSPDoc.h, JungSangE_DSPDoc.cpp - ¹®¼­
-    ÀÌ ÆÄÀÏ¿¡´Â CJungSangE_DSPDoc Å¬·¡½º°¡ µé¾î ÀÖ½À´Ï´Ù. ÀÌ ÆÄÀÏÀ» ÆíÁýÇÏ¿©
-    Æ¯¼öÇÑ ¹®¼­ µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÏ°í CJungSangE_DSPDoc::Serialize¸¦ ÅëÇØ ÆÄÀÏ
-    ÀúÀå ¹× ·Îµå¸¦ ±¸ÇöÇÕ´Ï´Ù.
+ActiveX ì»¨íŠ¸ë¡¤
+    ì‘ìš© í”„ë¡œê·¸ëž¨ì—ì„œ ActiveX ì»¨íŠ¸ë¡¤ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ ì§€ì›í•©ë‹ˆë‹¤.
 
-JungSangE_DSPView.h, JungSangE_DSPView.cpp - ¹®¼­ ºä
-    ÀÌ ÆÄÀÏ¿¡´Â CJungSangE_DSPView Å¬·¡½º°¡ µé¾î ÀÖ½À´Ï´Ù.
-    CJungSangE_DSPView °³Ã¼´Â CJungSangE_DSPDoc °³Ã¼¸¦ º¸´Â µ¥ »ç¿ëµË´Ï´Ù.
-
-
-
-
+ì¸ì‡„ ë° ì¸ì‡„ ë¯¸ë¦¬ ë³´ê¸° ì§€ì›
+    ì‘ìš© í”„ë¡œê·¸ëž¨ ë§ˆë²•ì‚¬ê°€ MFC ë¼ì´ë¸ŒëŸ¬ë¦¬ì—ì„œ CView í´ëž˜ìŠ¤ì˜ ë©¤ë²„ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ì—¬ ì¸ì‡„, ì¸ì‡„ ì„¤ì •
+    ë° ì¸ì‡„ ë¯¸ë¦¬ ë³´ê¸° ëª…ë ¹ì„ ì²˜ë¦¬í•˜ëŠ” ì½”ë“œë¥¼ ìƒì„±í–ˆìŠµë‹ˆë‹¤.
 
 /////////////////////////////////////////////////////////////////////////////
 
-±âÅ¸ ±â´É:
-
-ActiveX ÄÁÆ®·Ñ
-    ÀÀ¿ë ÇÁ·Î±×·¥¿¡¼­ ActiveX ÄÁÆ®·ÑÀ» »ç¿ëÇÒ ¼ö ÀÖµµ·Ï Áö¿øÇÕ´Ï´Ù.
-
-ÀÎ¼â ¹× ÀÎ¼â ¹Ì¸® º¸±â Áö¿ø
-    ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç°¡ MFC ¶óÀÌºê·¯¸®¿¡¼­ CView Å¬·¡½ºÀÇ ¸â¹ö ÇÔ¼ö¸¦ È£ÃâÇÏ¿© ÀÎ¼â, ÀÎ¼â ¼³Á¤
-    ¹× ÀÎ¼â ¹Ì¸® º¸±â ¸í·ÉÀ» Ã³¸®ÇÏ´Â ÄÚµå¸¦ »ý¼ºÇß½À´Ï´Ù.
-
-/////////////////////////////////////////////////////////////////////////////
-
-±âÅ¸ Ç¥ÁØ ÆÄÀÏ:
+ê¸°íƒ€ í‘œì¤€ íŒŒì¼:
 
 StdAfx.h, StdAfx.cpp
-    ÀÌ ÆÄÀÏÀº ¹Ì¸® ÄÄÆÄÀÏµÈ Çì´õ ÆÄÀÏ(PCH)ÀÎ JungSangE_DSP.pch¿Í
-    ¹Ì¸® ÄÄÆÄÀÏµÈ Çü½Ä ÆÄÀÏÀÎ StdAfx.obj¸¦ ºôµåÇÏ´Â µ¥ »ç¿ëµË´Ï´Ù.
+    ì´ íŒŒì¼ì€ ë¯¸ë¦¬ ì»´íŒŒì¼ëœ í—¤ë” íŒŒì¼(PCH)ì¸ JungSangE_DSP.pchì™€
+    ë¯¸ë¦¬ ì»´íŒŒì¼ëœ í˜•ì‹ íŒŒì¼ì¸ StdAfx.objë¥¼ ë¹Œë“œí•˜ëŠ” ë° ì‚¬ìš©ë©ë‹ˆë‹¤.
 
 Resource.h
-    »õ ¸®¼Ò½º ID¸¦ Á¤ÀÇÇÏ´Â Ç¥ÁØ Çì´õ ÆÄÀÏÀÔ´Ï´Ù.
-    Microsoft Visual C++¿¡¼­ ÀÌ ÆÄÀÏÀ» ÀÐ°í ¾÷µ¥ÀÌÆ®ÇÕ´Ï´Ù.
-
-JungSangE_DSP.manifest
-	ÀÀ¿ë ÇÁ·Î±×·¥ ¸Å´ÏÆä½ºÆ® ÆÄÀÏÀº Windows XP¿¡¼­ Æ¯Á¤ ¹öÀüÀÇ Side-by-Side 
-	¾î¼Àºí¸®¿¡ ´ëÇÑ ÀÀ¿ë ÇÁ·Î±×·¥ Á¾¼Ó¼ºÀ» ¼³¸íÇÏ´Â µ¥ »ç¿ëµË´Ï´Ù. ·Î´õ´Â ÀÌ Á¤º¸¸¦ 
-	»ç¿ëÇÏ¿© ¾î¼Àºí¸® Ä³½Ã¿¡¼­ ÀûÀýÇÑ ¾î¼Àºí¸®¸¦ ·ÎµåÇÏ°Å³ª ÀÀ¿ë ÇÁ·Î±×·¥¿¡¼­ Àü¿ë 
-	¾î¼Àºí¸®¸¦ ·ÎµåÇÕ´Ï´Ù. ÀÀ¿ë ÇÁ·Î±×·¥ ¸Å´ÏÆä½ºÆ®´Â ÀÀ¿ë ÇÁ·Î±×·¥ ½ÇÇà ÆÄÀÏ°ú °°Àº 
-	Æú´õ¿¡ ¼³Ä¡µÈ ¿ÜºÎ .manifest ÆÄÀÏ·Î Àç¹èÆ÷¸¦ À§ÇØ Æ÷ÇÔµÇ°Å³ª ¸®¼Ò½ºÀÇ ÇüÅÂ·Î 
-	½ÇÇà ÆÄÀÏ¿¡ Æ÷ÇÔµÉ ¼ö ÀÖ½À´Ï´Ù. 
-/////////////////////////////////////////////////////////////////////////////
-
-±âÅ¸ Âü°í:
-
-ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç´Â "TODO:"¸¦ »ç¿ëÇÏ¿© Ãß°¡ÇÏ°Å³ª »ç¿ëÀÚ ÁöÁ¤ÇØ¾ß ÇÏ´Â
-¼Ò½º ÄÚµå ºÎºÐÀ» ³ªÅ¸³À´Ï´Ù.
-
-ÀÀ¿ë ÇÁ·Î±×·¥ÀÌ °øÀ¯ DLL¿¡¼­ MFC¸¦ »ç¿ëÇÏ´Â °æ¿ì ÇØ´ç MFC DLLÀ» 
-Àç¹èÆ÷ÇØ¾ß ÇÕ´Ï´Ù. ±×¸®°í ÀÀ¿ë ÇÁ·Î±×·¥ÀÌ ¿î¿µ Ã¼Á¦ÀÇ ·ÎÄ¶°ú 
-´Ù¸¥ ¾ð¾î¸¦ »ç¿ëÇÏ´Â °æ¿ì ÇØ´ç Áö¿ªÈ­µÈ ¸®¼Ò½ºÀÎ MFC100XXX.DLLÀ» 
-Àç¹èÆ÷ÇØ¾ß ÇÕ´Ï´Ù. ÀÌ µÎ°¡Áö Ç×¸ñ¿¡ ´ëÇÑ ÀÚ¼¼ÇÑ ³»¿ëÀº 
-MSDN ¼³¸í¼­ÀÇ Visual C++ ÀÀ¿ë ÇÁ·Î±×·¥ Àç¹èÆ÷ Ç×¸ñÀ» 
-ÂüÁ¶ÇÏ½Ê½Ã¿À.
+    ìƒˆ ë¦¬ì†ŒìŠ¤ IDë¥¼ ì •ì˜í•˜ëŠ” í‘œì¤€ í—¤ë” íŒŒì¼ìž…ë‹ˆë‹¤.
+    Microsoft Visual C++ì—ì„œ ì´ íŒŒì¼ì„ ì½ê³  ì—…ë°ì´íŠ¸í•©ë‹ˆë‹¤.
 
 /////////////////////////////////////////////////////////////////////////////
